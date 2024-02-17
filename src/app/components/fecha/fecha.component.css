@@ -1,0 +1,29 @@
+
+.carousel-container {
+  width: 60%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: 800%; 
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 53px; 
+  padding-left: 3px;
+  color:#025a91;
+    margin-bottom: 10px;
+margin-left: 5px;
+}
+
+
+.carousel-container:hover .carousel-wrapper {
+  transition: none;
+}

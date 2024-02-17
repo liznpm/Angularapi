@@ -1,0 +1,28 @@
+#nav-list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: azure;
+  border-radius: 53px;
+}
+
+.navbar {
+  background-color: #001c2e;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  background-color: #025a91;
+  color: #ffffff;
+}
+
+  

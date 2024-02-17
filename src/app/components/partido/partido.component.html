@@ -1,0 +1,35 @@
+<!-- Agrega este código en tu archivo del componente (por ejemplo, app-tu-componente.component.html) -->
+
+<div class="estadios-selector">
+  <button class="boton-circular" (click)="filtrarPorEstadio('La Batea')">La Batea</button>
+  <button class="boton-circular" (click)="filtrarPorEstadio('Sixto Durán Ballen')">Sixto Durán Ballen</button>
+</div>
+
+
+
+
+<div *ngIf="datos && datos.length > 0" class="card-container">
+  <div *ngFor="let dato of datos; let i = index" class="card">
+    <div class="fechapartido">
+      <p>{{ dato.fechaTexto }}</p>
+    </div>
+    <div class="team-info">
+      <div class="local-info">
+        <p>{{ dato.nombreLocal }}</p>
+      </div>
+      <div class="vs">VS</div>
+      <div class="visita-info">
+        <p>{{ dato.nombreVisita }}</p>
+      </div>
+    </div>
+    <div class="result-info">
+      <p>Resultado: {{ dato.resultadoLocal }} - {{ dato.resultadoVisita }}</p>
+      <p>Estadio: {{ dato.nombreEstadio }}</p>
+      <p>{{ dato.fechaNumeroTexto }}</p>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="datos && datos.length === 0">
+  <p>No hay datos disponibles</p>
+</div>

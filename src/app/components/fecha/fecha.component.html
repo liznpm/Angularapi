@@ -1,0 +1,10 @@
+<div class="carousel-container">
+  <div *ngIf="datos && datos.length > 0" class="carousel-wrapper">
+    <div *ngFor="let dato of datos.slice(0, 4)" class="slide">
+      <p>{{ dato.fechaTexto }}</p>
+    </div>
+  </div>
+  <div *ngIf="datos && datos.length === 0">
+    <p>No data available</p>
+  </div>
+</div>
